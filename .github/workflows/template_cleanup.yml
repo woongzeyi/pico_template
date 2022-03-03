@@ -24,7 +24,7 @@ jobs:
           REPO_NAME: ${{ github.event.repository.name }}
           
       - name: Action Self Destruction
-        run: rm -rf .github/workflows/template_cleanup.yml && find . -type d -empty -delete -not -path ./pico-sdk
+        run: rm -rf .github/workflows/template_cleanup.yml
         
       - name: Commit files
         run: |
