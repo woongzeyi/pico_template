@@ -1,4 +1,7 @@
 init:
+  git submodule update --init
+  cd pico-sdk; \
+  git submodule update --init
   mkdir build/
   cd build/; \
   cmake ..; \
